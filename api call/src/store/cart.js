@@ -1,9 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import {getCarts} from '../Api/cartData';
 
-
-
-
 const initialState  = {
     status: 'pending',
     data: [],

@@ -1,5 +1,6 @@
-// import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
 const Home = () => {
     const navigate = useNavigate();
     const handleOnClick = () => {
@@ -8,14 +9,15 @@ const Home = () => {
     const handleClick = () => {
         navigate('/counter');
     };
+   
     return(
         <div>
         <h1>Welcome to cart</h1>
-       
-        {/* <li><Link to = '/dashboard'>Login details</Link></li>
-        <li><Link to = '/counter'>Counter</Link></li> */}
-        <button onClick = {handleOnClick}>Login details</button>
-        <button onClick = {handleClick}>Counter</button>
+       <Stack spacing={2} direction="row" justifyContent="center">
+       <Button variant="contained"  onClick = {handleOnClick}>Login details</Button>
+        <Button variant="contained"  onClick = {handleClick}>Counter</Button>
+        </Stack>
+        
        
         </div>
     );
