@@ -17,6 +17,16 @@ html, body {
   background-repeat: no-repeat;
 }
 
+#d
+{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    padding: 50px;
+    border: 2px solid rgb(182, 176, 176);
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;

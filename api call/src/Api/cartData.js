@@ -13,7 +13,7 @@ export const getCarts = () => {
     })
     
     .catch(error => {
-      console.error("Error:", error);
+      // console.error("Error:", error);
       throw error;
     }
   );
